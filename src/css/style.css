@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.react-icon {
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.romb {
+  border: 5px solid #61dbfb;
+  border-radius: 65%;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  transition: all 3s ease;
+}
+.first {
+  animation: firstRomb 3s linear infinite;
+}
+.second {
+  animation: secondRomb 3s linear infinite;
+}
+.third {
+  animation: thirdRomb 3s linear infinite;
+}
+.top {
+  background: #61dbfb;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #61dbfb);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: topAnimation 3s linear infinite;
+  position: relative;
+  box-shadow: inset 0 0 18px #fff, inset 6px 0 18px #5cabff,
+    inset -6px 0 18px #0ff, inset 6px 0 30px violet, inset -6px 0 30px #d8b5eb,
+    inset -6px 0 18px #0ff, 0 0 18px #fff, -4px 0 18px #61dbfb,
+    4px 0 18px #ff5ce1;
+}
+@keyframes topAnimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes firstRomb {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes secondRomb {
+  0% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(480deg);
+  }
+}
+@keyframes thirdRomb {
+  0% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(600deg);
+  }
+}
